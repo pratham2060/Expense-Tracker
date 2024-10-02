@@ -1,5 +1,6 @@
 import { UserButton } from '@clerk/nextjs'
 import React from 'react'
+import DynamicSideNav from './DynamicSideNav'
 
 function DashboardHeader
 () {

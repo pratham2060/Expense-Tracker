@@ -3,8 +3,8 @@ import { BarChart, Bar, Tooltip, XAxis, YAxis, CartesianGrid, Legend, Responsive
 
 function BarChartDashboard({ budgetList }) {
   return (
-    <div style={{ width: '98%', height: 400 }} className='border p-5 hover:shadow-md'>
-      <h2 className='font-bold text-2xl ml-4 mb-6'>Activity</h2>
+    <div style={{ width: '98%', height: 410 }} className='border p-5 hover:shadow-md'>
+      <h2 className='font-bold text-2xl ml-4 mb-2'>Activity</h2>
       <ResponsiveContainer>
         <BarChart
           data={budgetList}
