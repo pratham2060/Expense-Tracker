@@ -7,6 +7,7 @@ import { UserButton } from "@clerk/nextjs";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
+
 function SideNav() {
   const menuList = [
     {
@@ -25,7 +26,7 @@ function SideNav() {
       id: 3,
       title: "Expenses",
       icon: ReceiptText,
-      path: "/dashboard/expenses",
+      path: "/dashboard/expenses" || "/dashboard/expenses/",
     },
     {
       id: 4,
