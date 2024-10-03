@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { toast } from "sonner";
-import { db } from "../../../../../utils/dbConfig";
+import { db } from "@/utils/dbconfig";
 import { Budgets, Expenses } from "@/utils/schema";
 import moment from "moment";
 import { Loader } from "lucide-react";
