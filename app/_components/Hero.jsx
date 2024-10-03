@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 function Home() {
   return (
@@ -16,29 +17,29 @@ function Home() {
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <a
+            <Link
               className="block w-full rounded bg-blue-600 px-12 py-3 text-sm font-medium text-white shadow-lg transition duration-300 ease-in-out transform hover:scale-105 sm:w-auto"
-              href="#"
+              href="/sign-up"
             >
               Get Started
-            </a>
+            </Link>
 
-            <a
+            <Link
               className="block w-full rounded px-12 py-3 text-sm font-medium text-blue-600 border border-blue-600 shadow-lg hover:bg-blue-600 hover:text-white transition duration-300 ease-in-out transform hover:scale-105 sm:w-auto"
-              href="#"
+              href="/about"
             >
               Learn More
-            </a>
+            </Link>
           </div>
         </div>
       </div>
       <Image 
-        src={'/dash.jpg'}
+        src={'/FinalDash.png'}
         width={1000}
         height={700}
         className='rounded-xl m-auto flex items-center' 
         style={{ marginTop: '-50px' }} 
-        alt="Dashboard Illustration"
+        alt="Dashboard Illustration Image"
       />
       
       {/* New Features Section */}
@@ -70,12 +71,12 @@ function Home() {
       {/* Call to Action Section */}
       <div className="py-16 bg-blue-600 text-white text-center">
         <h2 className="text-xl font-bold">Ready to take control of your finances?</h2>
-        <a 
-          href="#" 
+        <Link
+          href="/sign-up" 
           className="mt-4 inline-block rounded bg-white text-blue-600 px-6 py-3 font-medium transition duration-300 ease-in-out hover:bg-gray-200"
         >
           Start Now
-        </a>
+        </Link>
       </div>
     </section>
   );
