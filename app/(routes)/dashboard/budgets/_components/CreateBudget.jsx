@@ -18,7 +18,7 @@ import { Button } from '@/components/ui/button';
 import { Budgets } from '@/utils/schema';
 import { toast } from "sonner";
 import { useUser } from '@clerk/nextjs';
-import { db } from  '@/utils/dbConfig';
+import { db } from  '../../../../../utils/dbConfig';
 
 function CreateBudget({refreshData}) {
     const [emojiIcon, setEmojiIcon] = useState("😎");
