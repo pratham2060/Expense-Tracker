@@ -1,7 +1,7 @@
 "use client"; // Marks this component as a Client Component
 
 import React, { useEffect, useState } from 'react';
-import { db } from '../../../../../utils/dbConfig';
+import { db } from '@/utils/dbConfig';
 import { getTableColumns, sql, eq, desc } from 'drizzle-orm';
 import { Budgets, Expenses, Expenses as ExpensesTable } from '@/utils/schema'; 
 import { useUser } from '@clerk/nextjs';
