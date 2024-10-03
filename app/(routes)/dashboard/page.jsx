@@ -97,7 +97,7 @@ function Dashboard() {
       </div>
       <div className='mt-5'>
         <h2 className="font-bold text-2xl mt-5">Lastest Expenses</h2>
-        <ExpenseListTable expenseList={expensesList} refreshData={() => getBudgetList} />
+        <ExpenseListTable expenseList={expensesList} refreshData={() => getBudgetList()} />
       </div>
     </div>
   );

@@ -43,7 +43,10 @@ const AboutPage = () => {
       {/* Testimonial Section */}
       <section className="bg-gray-100 py-20">
         <div className="container mx-auto px-4">
+          <div className='flex justify-between items-center'>
           <h2 className="text-3xl font-bold text-center mb-12">What Our Users Say</h2>
+          <p className='text-sm text-red-600'>*Thses are not actual reviews</p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <div className="flex items-center mb-4">
@@ -70,6 +73,18 @@ const AboutPage = () => {
               <p className="text-gray-700">"As a business owner, this app has been a game-changer. It's helped me keep my personal and business expenses organized and under control."</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Made By Section */}
+      <section className="bg-white py-8">
+        <div className="container mx-auto text-center">
+          <p className="text-gray-700 text-lg">
+            This site was made by Prathamesh Charoskar and is open-source on GitHub. Check out the code 
+            <Link href="https://github.com/pratham2060/Expense-Tracker.git" className="text-blue-600 underline hover:text-blue-800 transition duration-300">
+              here
+            </Link>.
+          </p>
         </div>
       </section>
 
