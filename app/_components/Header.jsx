@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import Button from "./Button";
 import { UserButton, useUser } from "@clerk/nextjs";
@@ -9,8 +9,8 @@ import { useRouter } from 'next/navigation';
 
 function Header() {
   const { user, isSignedIn } = useUser();
-  const [menuOpen, setMenuOpen] = useState(false);
   const router = useRouter();
+
   const handleClick = () => {
     router.push('/sign-up');
   }
@@ -23,7 +23,7 @@ function Header() {
       </div>
 
       {/* Navigation links */}
-      <div className={`font-bold text-lg flex-col md:flex-row md:flex items-center space-x-4 ${menuOpen ? "flex" : "hidden"} md:flex`}>
+      <div className={`font-bold text-lg flex-col md:flex-row md:flex items-center space-x-4`}>
         <Link href="/" className="hover:text-primary">
           <h3>Home</h3>
         </Link>
@@ -35,7 +35,7 @@ function Header() {
         </Link>
       </div>
 
-      {/* Sign-in and User section (kept separate) */}
+      {/* Sign-in and User section */}
       <div className="flex items-center space-x-4">
         {isSignedIn ? (
           <>
@@ -45,7 +45,7 @@ function Header() {
             <UserButton />
           </>
         ) : (
-          <Button onClick={handleClick()}>Get started</Button>
+          <Button onClick={handleClick}>Get started</Button>
         )}
       </div>
     </div>
