@@ -47,7 +47,7 @@ const AboutPage = () => {
         <div className="container mx-auto px-4">
           <div className='flex justify-between items-center'>
           <h2 className="text-3xl font-bold text-center mb-12">What Our Users Say</h2>
-          <p className='text-sm text-red-600'>*Thses are not actual reviews</p>
+          <p className='text-sm text-red-600'>*These are not actual reviews</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
