@@ -23,7 +23,7 @@ function Header() {
       </div>
 
       {/* Navigation links */}
-      <div className={`font-bold text-lg flex-col md:flex-row items-center space-x-4 md:hidden`}>
+      <div className={`font-bold text-lg flex-col items-center space-x-4 md:hidden`}>
         <Link href="/" className="hover:text-primary">
           <h3>Home</h3>
         </Link>
