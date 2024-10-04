@@ -2,10 +2,12 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Footer from '@/app/_components/Footer';
+import Header from '@/app/_components/Header';
 
 const AboutPage = () => {
   return (
     <div className="bg-gray-50">
+      <Header />
       {/* Hero Section */}
       <section className="bg-blue-600 text-white py-20">
         <div className="container mx-auto px-4 text-center">
