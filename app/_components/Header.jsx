@@ -23,14 +23,14 @@ function Header() {
       </div>
 
       {/* Navigation links */}
-      <div className={`font-bold text-lg flex-col items-center space-x-4 md:hidden`}>
+      <div className={`font-bold text-lg flex-col items-center space-x-4 hidden md:flex sm:hidden`}>
         <Link href="/" className="hover:text-primary">
           <h3>Home</h3>
         </Link>
-        <Link href="/about" className="hover:text-primary ml-8">
+        <Link href="/about" className="hover:text-primary md:ml-8">
           <h3>About</h3>
         </Link>
-        <Link href="#" className="hover:text-primary ml-8">
+        <Link href="#" className="hover:text-primary md:ml-8">
           <h3>Contact</h3>
         </Link>
       </div>
