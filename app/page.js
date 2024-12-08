@@ -5,13 +5,15 @@ import Head from 'next/head';
 
 export default function Home() {
   return (
+    <>
     <Head> 
-      <title>Hisabh - Get ready to manage your expenses</title> 
+        <title>Hisabh - Get ready to manage your expenses</title> 
     </Head>
     <div className='relative'>
       <Header />
       <Hero />
       <Footer />
     </div>
+    </>
   );
 }
